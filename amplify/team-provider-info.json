@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-golfweather-dev-232252-authRole",
+      "UnauthRoleArn": "arn:aws:iam::570840534900:role/amplify-golfweather-dev-232252-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::570840534900:role/amplify-golfweather-dev-232252-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-golfweather-dev-232252-deployment",
+      "UnauthRoleName": "amplify-golfweather-dev-232252-unauthRole",
+      "StackName": "amplify-golfweather-dev-232252",
+      "StackId": "arn:aws:cloudformation:us-east-2:570840534900:stack/amplify-golfweather-dev-232252/9ebfadf0-b595-11ed-bace-06122b103c66",
+      "AmplifyAppId": "duo0k9fi6ll9l"
+    }
+  }
+}
