@@ -9,11 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "18.14.1",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.34.0",
-    "eslint-config-next": "13.2.1",
     "next": "13.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -22,5 +17,14 @@
   "main": "index.js",
   "repository": "https://github.com/Jpuetz55/golf-weather.git",
   "author": "jpuetz55 <jpuetz55@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "18.14.1",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "eslint": "8.34.0",
+    "eslint-config-next": "13.2.1",
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.4"
+  }
 }
