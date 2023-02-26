@@ -1,9 +1,8 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
 
-
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -15,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div >
+        <div>
           <p>
             Get started by editing&nbsp;
             <code>src/pages/index.tsx</code>
@@ -26,34 +25,15 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                width={100}
-                height={24}
-                priority
-              />
+              By <Image src="/vercel.svg" alt="Vercel Logo" width={100} height={24} priority />
             </a>
           </div>
         </div>
 
         <div>
-          <Image          
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
+          <Image src="/next.svg" alt="Next.js Logo" width={180} height={37} priority />
           <div>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
+            <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
           </div>
         </div>
 
@@ -73,7 +53,6 @@ export default function Home() {
 
           <a
             href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -101,17 +80,17 @@ export default function Home() {
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
-            rel="noopener noreferrer" >
+            rel="noopener noreferrer"
+          >
             <h2 className={inter.className}>
               Deploy <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
+              Instantly deploy your Next.js site to a shareable URL with&nbsp;Vercel.
             </p>
           </a>
         </div>
       </main>
     </>
-  )
+  );
 }
