@@ -12,9 +12,6 @@
       "AmplifyAppId": "duo0k9fi6ll9l"
     },
     "categories": {
-      "api": {
-        "golfweather": {}
-      },
       "auth": {
         "golfweather6ffb8f02": {}
       }
