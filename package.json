@@ -9,17 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@aws-amplify/auth": "^5.1.10",
     "@aws-amplify/cli": "^10.7.3",
+    "@aws-amplify/ui-react": "^4.3.8",
     "@emotion/cache": "latest",
     "@emotion/react": "^11.10.6",
     "@emotion/server": "latest",
     "@emotion/styled": "latest",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/lab": "^4.0.0-alpha.61",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "@next/font": "latest",
+    "aws-amplify": "^5.0.16",
     "next": "13.2.1",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.43.2",
+    "react-select": "^5.7.0"
   },
   "main": "index.js",
   "repository": "https://github.com/Jpuetz55/golf-weather.git",
