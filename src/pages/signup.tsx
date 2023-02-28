@@ -82,8 +82,6 @@ export default function Signup() {
     }
   }
 
-  console.log("The value of the user from the hook is:", user);
-
   return (
     <form onSubmit={handleSubmit(onSubmit)} autoComplete="off">
       <Grid container direction="column" alignItems="center" justifyContent="center" spacing={1}>
