@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, Grid, Snackbar, TextField } from "@material-ui/core";
 import { Alert } from "@material-ui/lab";
-import { useUser } from "../context/AuthContext";
 import { Auth } from "aws-amplify";
 import { CognitoUser } from "@aws-amplify/auth";
 import { useRouter } from "next/router";
@@ -15,7 +14,6 @@ interface IFormInput {
 }
 
 export default function Signup() {
-  const { user, setUser } = useUser();
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [signUpError, setSignUpError] = useState<string>("");
@@ -35,7 +33,7 @@ export default function Signup() {
         await signUpWithEmailAndPassword(data);
         setShowCode(true);
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
       setSignUpError(err.message);
       setOpen(true);
@@ -83,8 +81,6 @@ export default function Signup() {
       console.log("error confirming sign up", error);
     }
   }
-
-  console.log("The value of the user from the hook is:", user);
 
   return (
     <form onSubmit={handleSubmit(onSubmit)} autoComplete="off">
