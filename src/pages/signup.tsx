@@ -33,7 +33,7 @@ export default function Signup() {
         await signUpWithEmailAndPassword(data);
         setShowCode(true);
       }
-    } catch (err) {
+    } catch (err: any) {
       console.error(err);
       setSignUpError(err.message);
       setOpen(true);
