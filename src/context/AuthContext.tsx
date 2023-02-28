@@ -40,4 +40,3 @@ export default function AuthContext({children}: Props): React.ReactElement {
 
   return <UserContext.Provider value ={{ user, setUser }}>{children}</UserContext.Provider>;
 }
-export const useUser = () => (): UserContextType => useContext(UserContext);

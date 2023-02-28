@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { Button, Grid, Snackbar, TextField } from "@material-ui/core";
 import { Alert } from "@material-ui/lab";
-import { useUser } from "../context/AuthContext";
 import { Auth } from "aws-amplify";
 import { CognitoUser } from "@aws-amplify/auth";
 import { useRouter } from "next/router";
@@ -15,7 +14,6 @@ interface IFormInput {
 }
 
 export default function Signup() {
-  const { user, setUser } = useUser();
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [signUpError, setSignUpError] = useState<string>("");
