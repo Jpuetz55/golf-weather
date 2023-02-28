@@ -4,7 +4,7 @@ import { createContext, Dispatch, SetStateAction, useContext, useEffect, useStat
 
 interface UserContextType {
   user: CognitoUser | null;
-  setUser: Dispatch<SetStateAction<CognitoUser>>;
+  setUser: Dispatch<SetStateAction<CognitoUser | null>>;
 }
 
 const UserContext = createContext<UserContextType>({} as UserContextType);
@@ -38,6 +38,6 @@ export default function AuthContext({children}: Props): React.ReactElement {
     }
   }
 
-  return <UserContext.Provider value={{ user, setUser }}>{children}</UserContext.Provider>;
+  return <UserContext.Provider value ={{ user, setUser }}>{children}</UserContext.Provider>;
 }
 export const useUser = () => (): UserContextType => useContext(UserContext);
